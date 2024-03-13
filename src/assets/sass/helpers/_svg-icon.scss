@@ -1,0 +1,12 @@
+//
+// SVG
+//
+// SVG colors
+@each $name,
+$color in $theme-text-colors {
+    .svg-icon-#{$name} {
+        path {
+            stroke: $color;
+        }
+    }
+}
