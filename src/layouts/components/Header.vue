@@ -97,7 +97,14 @@
             </li>
           </ul>
 
-          <button class="btn btn-primary login-btn">Get Started Free</button>
+          <a
+            href="https://panel.easybitpay.com/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary login-btn"
+          >
+            Get Started Free
+          </a>
         </div>
         <!-- end::Links -->
       </nav>
