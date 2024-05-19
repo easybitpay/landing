@@ -17,13 +17,10 @@ if [ -d "dist" ]; then
     mv web web.backup
     mv dist web
     cd web
-
-    ln -s ../../files/apps
-    ln -s ../../files/merchants
-    ln -s ../../files/tokens
-    ln -s ../../files/icons
 else
     echo "Dist directory does not exist."
     echo "Failed to build."
 fi
+
+
 
