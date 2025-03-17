@@ -23,7 +23,7 @@ const links = [
       },
       {
         title: 'Privecy & terms',
-        link: 'dashboard'
+        link: 'security'
       },
       {
         title: 'Careers',
@@ -44,7 +44,7 @@ const links = [
       },
       {
         title: 'Api Documentation',
-        link: 'dashboard'
+        link: 'document'
       },
       {
         title: 'Exchange Rate',

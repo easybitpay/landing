@@ -70,7 +70,7 @@
                   </li>
 
                   <li>
-                    <RouterLink class="dropdown-item" to="/">
+                    <RouterLink class="dropdown-item" :to="{name: 'faq'}">
                       <div>
                         <div class="svg-box">
                           <inline-svg src="/media/icons/icons/camera.svg"></inline-svg>
@@ -82,7 +82,7 @@
                   </li>
 
                   <li>
-                    <RouterLink class="dropdown-item" to="/">
+                    <RouterLink class="dropdown-item" :to="{name: 'document'}">
                       <div>
                         <div class="svg-box">
                           <inline-svg src="/media/icons/icons/Webcame.svg"></inline-svg>
