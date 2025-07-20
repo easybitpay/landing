@@ -170,7 +170,7 @@ const scrollTop = () => {
 
       <!-- begin::Copyright -->
       <div class="bg-primary py-3 px-6 d-flex align-items-center justify-content-between">
-        <span class="fs-8 text-white"> All Rights Reservd by Easy bitpay </span>
+        <span class="fs-8 text-white"> All Rights Reservd by EasyBitPay </span>
 
         <!-- begin::Go To Top -->
         <div>
