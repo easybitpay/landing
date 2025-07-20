@@ -4,13 +4,24 @@
     <div class="container">
       <nav>
         <!-- begin::Logo -->
-        <RouterLink to="/">
-          <inline-svg
-            src="/media/images/logo/sidebar-main-logo.svg"
-            class="logo"
-            width="168"
-          ></inline-svg>
-        </RouterLink>
+        <div class="d-flex align-items-center justify-content-between w-100 w-sm-initial">
+          <RouterLink to="/">
+            <inline-svg
+              src="/media/images/logo/sidebar-main-logo.svg"
+              class="logo"
+              width="168"
+            ></inline-svg>
+          </RouterLink>
+
+          <a
+            href="https://panel.easybitpay.com/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-sm btn-primary d-sm-none"
+          >
+            Start Now
+          </a>
+        </div>
         <!-- end::Logo -->
 
         <!-- begin::Links -->
@@ -70,7 +81,7 @@
                   </li>
 
                   <li>
-                    <RouterLink class="dropdown-item" :to="{name: 'faq'}">
+                    <RouterLink class="dropdown-item" :to="{ name: 'faq' }">
                       <div>
                         <div class="svg-box">
                           <inline-svg src="/media/icons/icons/camera.svg"></inline-svg>
@@ -82,7 +93,7 @@
                   </li>
 
                   <li>
-                    <RouterLink class="dropdown-item" :to="{name: 'document'}">
+                    <RouterLink class="dropdown-item" :to="{ name: 'document' }">
                       <div>
                         <div class="svg-box">
                           <inline-svg src="/media/icons/icons/Webcame.svg"></inline-svg>
@@ -101,7 +112,7 @@
             href="https://panel.easybitpay.com/#/"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn btn-primary login-btn"
+            class="btn btn-primary d-none d-sm-flex"
           >
             Get Started Free
           </a>
