@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const envPanelURL = import.meta.env.VITE_APP_PANEL_URL
+</script>
 <template>
   <header id="header">
     <div class="container">
@@ -14,7 +16,7 @@
           </RouterLink>
 
           <a
-            href="https://panel.easybitpay.com/#/"
+            :href="envPanelURL"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-sm btn-primary d-sm-none"
@@ -109,7 +111,7 @@
           </ul>
 
           <a
-            href="https://panel.easybitpay.com/#/"
+            :href="envPanelURL"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-primary d-none d-sm-flex"
