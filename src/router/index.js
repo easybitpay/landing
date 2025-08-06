@@ -32,4 +32,11 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach(() => {
+  // Scroll page to top on every route change
+  setTimeout(() => {
+    window.scrollTo(0, 0)
+  }, 100)
+})
+
 export default router

@@ -14,20 +14,16 @@ const links = [
     title: 'Company',
     links: [
       {
-        title: 'about us',
-        link: 'dashboard'
+        title: 'User Panel',
+        outerLink: 'https://users.easybitpay.com'
       },
       {
-        title: 'newsroom',
-        link: 'dashboard'
+        title: 'FAQ',
+        link: 'faq'
       },
       {
         title: 'Privecy & terms',
         link: 'security'
-      },
-      {
-        title: 'Careers',
-        link: 'dashboard'
       }
     ]
   },
@@ -35,20 +31,12 @@ const links = [
     title: 'Resources',
     links: [
       {
-        title: 'Blog',
-        link: 'dashboard'
-      },
-      {
-        title: 'Support',
-        link: 'dashboard'
+        title: 'Brand Book',
+        outerLink: 'https://easybitpay.com/downloads/easybitpayBrandbook-1.0.pdf'
       },
       {
         title: 'Api Documentation',
         link: 'document'
-      },
-      {
-        title: 'Exchange Rate',
-        link: 'dashboard'
       }
     ]
   }
@@ -116,7 +104,12 @@ const scrollTop = () => {
                 <!-- begin::Links -->
                 <ul>
                   <li v-for="(link, index) in item.links" :key="index">
-                    <RouterLink :to="{ name: link.link }"> {{ link.title }}</RouterLink>
+                    <RouterLink v-if="link.link" :to="{ name: link.link }">
+                      {{ link.title }}
+                    </RouterLink>
+                    <a v-else :href="link.outerLink" target="_blank" rel="noopener noreferrer"
+                      >{{ link.title }}
+                    </a>
                   </li>
                 </ul>
                 <!-- end::Links -->
