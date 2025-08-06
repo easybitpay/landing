@@ -31,6 +31,10 @@ const links = [
     title: 'Resources',
     links: [
       {
+        title: 'Donwload Our App',
+        outerLink: '/downloads/easybitpay.apk'
+      },
+      {
         title: 'Brand Book',
         outerLink: 'https://easybitpay.com/downloads/easybitpayBrandbook-1.0.pdf'
       },
