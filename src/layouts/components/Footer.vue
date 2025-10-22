@@ -40,7 +40,8 @@ const links = [
       },
       {
         title: 'Api Documentation',
-        link: 'document'
+        outerLink: '/media/files/EasyBitPay_API_Documentation.md',
+        download: true
       }
     ]
   }
@@ -111,8 +112,8 @@ const scrollTop = () => {
                     <RouterLink v-if="link.link" :to="{ name: link.link }">
                       {{ link.title }}
                     </RouterLink>
-                    <a v-else :href="link.outerLink" target="_blank" rel="noopener noreferrer"
-                      >{{ link.title }}
+                    <a v-else :href="link.outerLink" target="_blank" rel="noopener noreferrer">
+                      {{ link.title }}
                     </a>
                   </li>
                 </ul>
