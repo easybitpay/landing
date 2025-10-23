@@ -40,7 +40,7 @@ const links = [
       },
       {
         title: 'Api Documentation',
-        outerLink: '/media/files/EasyBitPay_API_Documentation.md',
+        outerLink: 'https://github.com/easybitpay/documents/tree/main',
         download: true
       }
     ]

@@ -49,7 +49,12 @@ const envPanelURL = import.meta.env.VITE_APP_PANEL_URL
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a class="dropdown-item" href="/media/files/EasyBitPay_API_Documentation.md">
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/easybitpay/documents/tree/main"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div>
                         <div class="svg-box">
                           <inline-svg src="/media/icons/icons/wireless.svg"></inline-svg>
