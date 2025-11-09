@@ -4,11 +4,13 @@
     justify-content: center;
     gap: .5rem;
     min-height: 2.5rem;
-    // color: $white !important;
+  transition: all ease 0.3s;
+  line-height: 2.5rem;
 }
 
 .btn-sm {
     min-height: 2.063rem;
+      line-height: 2.036rem;
 }
 
 .btn-light {
@@ -45,6 +47,13 @@ $value in $custom-sizes {
     .btn {
         &.h-#{$key} {
             min-height: initial !important;
+            line-height: #{$key};
         }
     }
+}
+
+.btn-white {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
 }

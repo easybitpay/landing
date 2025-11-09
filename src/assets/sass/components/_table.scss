@@ -274,11 +274,11 @@
         border-bottom: 1px solid var(--bs-border-color);
 
         &:first-child {
-          border-start-start-radius: $border-radius-lg;
+          border-start-start-radius: $border-radius-sm;
         }
 
         &:last-child {
-          border-start-end-radius: $border-radius-lg;
+          border-start-end-radius: $border-radius-sm;
         }
       }
     }
@@ -294,11 +294,11 @@
       &:last-child {
         td {
           &:first-child {
-            border-end-start-radius: $border-radius-lg;
+            border-end-start-radius: $border-radius-sm;
           }
 
           &:last-child {
-            border-end-end-radius: $border-radius-lg;
+            border-end-end-radius: $border-radius-sm;
           }
         }
       }

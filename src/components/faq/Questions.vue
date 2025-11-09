@@ -1,96 +1,68 @@
 <script setup>
 // Vue
-import { onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue'
 
-// Hooks
-import useAccordion from '@/hooks/useAccordion'
+// Store
+import { useAppStore } from '@/stores/app'
+
+// Composabless
+import useAccordion from '@/composables/useAccordion'
 
 // Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css'
 
 // Componenets
-import ItemCategories from '../globals/ItemCategories.vue';
-import AccordionItem from './AccordionItem.vue';
+import CategoryItemLoading from '../loadings/CategoryItemLoading.vue'
+import AccordionItemLoading from '../loadings/AccordionItemLoading.vue'
+import ItemCategories from '../globals/ItemCategories.vue'
+import AccordionItem from './AccordionItem.vue'
 
 // ----- START ----- //
 
 // Generals
-const { checkActiveAccordion } = useAccordion();
+const store = useAppStore()
+const { checkActiveAccordion } = useAccordion()
 
 // Refs
-const list = ref([
-  {
-    id: 1,
-    title: "How do I deal with Bitcoin’sprice volatility?",
-    description:
-      "If you are a risk-averse business, you can accept bitcoin payments without ever worrying about the price volatility that comes with it. The automatic conversion and split settlement features let businesses choose to have their bitcoin payments automatically converted to our supported currencies, either in full or as a percentage, at the time of a transaction.",
-  },
-  {
-    id: 2,
-    title: "How do I deal with Bitcoin’sprice volatility?",
-    description:
-      "If you are a risk-averse business, you can accept bitcoin payments without ever worrying about the price volatility that comes with it. The automatic conversion and split settlement features let businesses choose to have their bitcoin payments automatically converted to our supported currencies, either in full or as a percentage, at the time of a transaction.",
-  },
-  {
-    id: 3,
-    title: "How do I deal with Bitcoin’sprice volatility?",
-    description:
-      "If you are a risk-averse business, you can accept bitcoin payments without ever worrying about the price volatility that comes with it. The automatic conversion and split settlement features let businesses choose to have their bitcoin payments automatically converted to our supported currencies, either in full or as a percentage, at the time of a transaction.",
-  },
-  {
-    id: 4,
-    title: "How do I deal with Bitcoin’sprice volatility?",
-    description:
-      "If you are a risk-averse business, you can accept bitcoin payments without ever worrying about the price volatility that comes with it. The automatic conversion and split settlement features let businesses choose to have their bitcoin payments automatically converted to our supported currencies, either in full or as a percentage, at the time of a transaction.",
-  },
-  {
-    id: 5,
-    title: "How do I deal with Bitcoin’sprice volatility?",
-    description:
-      "If you are a risk-averse business, you can accept bitcoin payments without ever worrying about the price volatility that comes with it. The automatic conversion and split settlement features let businesses choose to have their bitcoin payments automatically converted to our supported currencies, either in full or as a percentage, at the time of a transaction.",
-  },
-]);
-const categories = ref([
-  {
-    id: 1,
-    title: "Payments overview",
-    count: 40,
-  },
-  {
-    id: 2,
-    title: "Currency conversion",
-    count: 40,
-  },
-  {
-    id: 3,
-    title: "Hosted checkout",
-    count: 40,
-  },
-  {
-    id: 4,
-    title: "Security & Protection",
-    count: 40,
-  },
-  {
-    id: 5,
-    title: "Payment buttons",
-    count: 40,
-  },
-  {
-    id: 6,
-    title: "Settlement & Transfer",
-    count: 40,
-  },
-]);
-const selectedCategory = ref(1);
+const loading = ref(false)
+const list = ref([])
+const categories = ref([])
+const selectedCategory = ref('')
+
+// Computeds
+const filteredList = computed(() => {
+  return list.value.filter((item) => item.category_id == selectedCategory.value)
+})
 
 // Functions
+
+/**
+ * Get FAQ List
+ */
+const getFAQList = async () => {
+  // Start Loading
+  loading.value = true
+
+  // Request
+  await store.getFAQList().then((res) => {
+    if (res) {
+      categories.value = res.faq_categories
+      list.value = res.faqs
+      selectedCategory.value = categories.value[0].id
+    }
+  })
+
+  // Stop Loading
+  loading.value = false
+}
+
 onMounted(async () => {
-  checkActiveAccordion("faqAccordion");
-});
+  await getFAQList()
+  checkActiveAccordion('faqAccordion')
+})
 </script>
 
 <template>
@@ -101,29 +73,32 @@ onMounted(async () => {
       :spaceBetween="16"
       :breakpoints="{
         '450': {
-          slidesPerView: 2,
+          slidesPerView: 2
         },
         '576': {
-          slidesPerView: 3,
+          slidesPerView: 3
         },
         '768': {
-          slidesPerView: 4,
+          slidesPerView: 4
         },
         '1200': {
-          slidesPerView: 5,
+          slidesPerView: 5
         },
         '1400': {
-          slidesPerView: 6,
-        },
+          slidesPerView: 6
+        }
       }"
       class="mySwiper swiper-tab"
     >
-      <SwiperSlide
-        v-for="item in categories"
-        :key="item.id"
-        @click="selectedCategory = item.id"
-      >
+      <template v-if="loading">
+        <SwiperSlide v-for="item in 2" :key="item">
+          <CategoryItemLoading />
+        </SwiperSlide>
+      </template>
+
+      <SwiperSlide v-for="item in categories" :key="item.id">
         <ItemCategories
+          @click="selectedCategory = item.id"
           :active="selectedCategory === item.id"
           :title="item.title"
           icon="wallet"
@@ -136,7 +111,19 @@ onMounted(async () => {
 
   <!-- begin::Accordion -->
   <div class="accordion" id="faqAccordion">
-    <AccordionItem v-for="(item, index) in list" :key="index" :item="item" />
+    <AccordionItemLoading v-if="loading" />
+
+    <template v-else>
+      <AccordionItem v-for="(item, index) in filteredList" :key="index" :item="item" />
+
+      <!-- begin::No FAQ Image -->
+      <inline-svg
+        v-if="!filteredList.length"
+        src="/media/icons/shapes/no-ticket.svg"
+        class="d-block mx-auto mt-10"
+      ></inline-svg>
+      <!-- end::No FAQ Image -->
+    </template>
   </div>
   <!-- end::Accordion -->
 </template>

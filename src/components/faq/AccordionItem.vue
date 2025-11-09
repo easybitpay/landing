@@ -3,9 +3,9 @@
 const props = defineProps({
   item: {
     type: Object,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 </script>
 
 <template>
@@ -22,33 +22,31 @@ const props = defineProps({
         {{ item.title }}
       </button>
     </h2>
-    <div
-      :id="`faq-${item.id}`"
-      class="accordion-collapse collapse"
-      data-bs-parent="#faqAccordion"
-    >
+    <div :id="`faq-${item.id}`" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
       <div class="accordion-body">
         {{ item.description }}
 
         <!-- begin::User Reaction -->
-        <div
-          class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between justify-content-md-start w-100 row-gap-3 mt-24"
-        >
-          <!-- begin::Question Box -->
+        <div class="mt-4 pt-4 border-top">
+          <div
+            class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between justify-content-md-start w-100 row-gap-3"
+          >
+            <!-- begin::Question Box -->
 
-          <!-- begin::Question -->
-          <p class="mb-0 text-gray-600">Did this answer your question?</p>
-          <!-- end::Question -->
+            <!-- begin::Question -->
+            <p class="mb-0 text-gray-600 fs-8">Did this answer your question?</p>
+            <!-- end::Question -->
 
-          <!-- begin::Emojies -->
-          <div class="d-flex gap-4 ms-0 ms-sm-8">
-            <img src="/media/icons/emoji/happy.png" class="cursor-pointer" />
-            <img src="/media/icons/emoji/sad.png" class="cursor-pointer" />
-            <img src="/media/icons/emoji/neutral.png" class="cursor-pointer" />
+            <!-- begin::Emojies -->
+            <div class="d-flex gap-4 ms-0 ms-sm-8">
+              <img src="/media/icons/emoji/happy.png" class="cursor-pointer" />
+              <img src="/media/icons/emoji/sad.png" class="cursor-pointer" />
+              <img src="/media/icons/emoji/neutral.png" class="cursor-pointer" />
+            </div>
+            <!-- end::Emojies -->
+
+            <!-- end::Question Box -->
           </div>
-          <!-- end::Emojies -->
-
-          <!-- end::Question Box -->
         </div>
         <!-- end::User Reaction -->
       </div>

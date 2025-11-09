@@ -1,6 +1,6 @@
 <script setup>
-// Hooks
-import useIconImage from '@/hooks/useIconImage';
+// Composabless
+import useIconImage from '@/composables/useIconImage'
 
 const coins = ['BTC', 'ETH', 'BNB', 'USDT', 'TRX', 'ECG', 'Polygon']
 // ----- START -----

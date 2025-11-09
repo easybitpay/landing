@@ -1,49 +1,53 @@
 .accordion-item:not(:last-child) {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .accordion-item {
-    border-radius: $accordion-border-radius;
-    transition: all linear .3s;
+  border-radius: $accordion-border-radius;
+  transition: all linear 0.3s;
 
+  &:not(:first-of-type) {
+    border: $accordion-border-width solid $accordion-border-color;
+  }
 
-    &:not(:first-of-type) {
-        border: $accordion-border-width solid $accordion-border-color;
-    }
-
-    &.accordion-active {
-        border-color: $gray-500;
-        box-shadow: 0px 25px 63px -53px $gray-400;
-
-        .accordion-button {
-            .title {
-                color: $primary !important;
-            }
-
-            .date {
-                display: none;
-            }
-        }
-
-        &:not(:first-of-type) {
-            border-color: $gray-500;
-        }
-    }
+  &.accordion-active {
+    border-color: $primary;
+    box-shadow: 0px 25px 63px -53px $gray-400;
 
     .accordion-button {
-        border-radius: $accordion-border-radius;
-        box-shadow: none;
+      background-color: $gray-100;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      .title {
+        color: $primary !important;
+      }
 
-        &.loading {
-            justify-content: space-between;
-            &::after {
-                display: none;
-            }
-        }
+      .date {
+        display: none;
+      }
     }
 
-    .accordion-body {
-        padding-top: 1rem;
-        line-height: 28px;
+    &:not(:first-of-type) {
+      border-color: $primary;
     }
+  }
+
+  .accordion-button {
+    border-radius: $accordion-border-radius;
+
+    box-shadow: none;
+    font-size: 1rem;
+
+    &.loading {
+      justify-content: space-between;
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .accordion-body {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
 }

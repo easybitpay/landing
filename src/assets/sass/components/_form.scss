@@ -15,6 +15,9 @@ input[type="number"] {
     &.form-control-sm {
         height: 2rem;
     }
+      &.form-control-lg {
+    height: 4.375rem;
+  }
 }
 
 .form-select {

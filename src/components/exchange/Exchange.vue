@@ -5,8 +5,8 @@ import { computed, onMounted, ref } from 'vue'
 // Store
 import { useExchangeStore } from '@/stores/exchange'
 
-// Hooks
-import useForm from '@/hooks/useForm'
+// Composabless
+import useForm from '@/composables/useForm'
 
 // Vuelidate
 import useVuelidate from '@vuelidate/core'

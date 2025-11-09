@@ -11,8 +11,8 @@ import { useHead } from '@unhead/vue'
 // Store
 import { useBlogStore } from '@/stores/blog'
 
-// Hooks
-import useConvertDate from '@/hooks/useConvertDate.js'
+// Composabless
+import useConvertDate from '@/composables/useConvertDate.js'
 
 // Compnenents
 import GallerySwiper from '@/components/globals/GallerySwiper.vue'
@@ -44,7 +44,13 @@ const getBlogDetail = async () => {
   // request
   await blogStore.getBlogDetail(slug.value).then((res) => {
     if (res) {
-      blogInfo.value = { ...res, body: res.body.replace(/\\n\\n|n{2,}/g, '<br/><br/>').replace(/(?:\\n|(?<=>)\s*n\s*(?=<))/g, '<br/>').trim() }
+      blogInfo.value = {
+        ...res,
+        body: res.body
+          .replace(/\\n\\n|n{2,}/g, '<br/><br/>')
+          .replace(/(?:\\n|(?<=>)\s*n\s*(?=<))/g, '<br/>')
+          .trim()
+      }
 
       head.patch({
         title: res.seo.title,

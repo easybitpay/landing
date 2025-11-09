@@ -28,9 +28,9 @@ const prevSlide = () => {
   <div>
     <div class="container">
       <div class="card w-100">
-        <div class="card-body p-12 d-flex gap-19">
+        <div class="card-body p-12">
           <Swiper :slidesPerView="1" :spaceBetween="24" :loop="true" class="latest-banner-swiper">
-            <SwiperSlide v-for="(item, index) in 10" :key="index" class="d-flex">
+            <SwiperSlide v-for="(item, index) in 10" :key="index" class="d-flex gap-19">
               <!-- begin::Image -->
               <div class="d-none d-lg-block">
                 <img src="/media/images/illustration/news.svg" alt="news" />

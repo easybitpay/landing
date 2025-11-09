@@ -2,8 +2,8 @@
 // Vue
 import { computed, ref } from 'vue'
 
-// Hook
-import useIconImage from '@/hooks/useIconImage'
+// Composables
+import useIconImage from '@/composables/useIconImage'
 
 // Props
 const props = defineProps({

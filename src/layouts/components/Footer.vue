@@ -2,8 +2,8 @@
 // Vue
 import { ref } from 'vue'
 
-// Hooks
-import useForm from '@/hooks/useForm'
+// Composabless
+import useForm from '@/composables/useForm'
 
 // Vuelidate
 import useVuelidate from '@vuelidate/core'
@@ -93,7 +93,7 @@ const scrollTop = () => {
   <div class="container mt-18">
     <footer id="footer">
       <!-- begin::Menu Box -->
-      <div class="menu-box rounded-top-5 pt-12 px-6 pb-22">
+      <div class="menu-box rounded-top-2 pt-12 px-6 pb-22">
         <div class="row justify-content-between gy-8">
           <!-- begin::Links -->
           <div class="col-lg-9 order-1 order-lg-0">
