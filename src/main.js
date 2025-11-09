@@ -6,11 +6,16 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+
+import { createHead } from '@unhead/vue/client'
+const head = createHead()
+
 import 'bootstrap'
 
 const app = createApp(App)
 
 app.use(createPinia())
+app.use(head)
 app.use(router)
 
 app.config.globalProperties.$filters = {

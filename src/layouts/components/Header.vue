@@ -76,7 +76,7 @@ const envPanelURL = import.meta.env.VITE_APP_PANEL_URL
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink class="dropdown-item" to="/">
+                    <RouterLink class="dropdown-item" :to="{ name: 'blog' }">
                       <div>
                         <div class="svg-box">
                           <inline-svg src="/media/icons/icons/camera.svg"></inline-svg>

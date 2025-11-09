@@ -27,10 +27,10 @@ const prevSlide = () => {
 <template>
   <div>
     <div class="container">
-      <Swiper :slidesPerView="1" :spaceBetween="24" :loop="true" class="latest-banner-swiper">
-        <SwiperSlide v-for="(item, index) in 10" :key="index" class="d-flex">
-          <div class="card w-100">
-            <div class="card-body p-12 d-flex gap-19">
+      <div class="card w-100">
+        <div class="card-body p-12 d-flex gap-19">
+          <Swiper :slidesPerView="1" :spaceBetween="24" :loop="true" class="latest-banner-swiper">
+            <SwiperSlide v-for="(item, index) in 10" :key="index" class="d-flex">
               <!-- begin::Image -->
               <div class="d-none d-lg-block">
                 <img src="/media/images/illustration/news.svg" alt="news" />
@@ -62,10 +62,10 @@ const prevSlide = () => {
                 </p>
                 <!-- end::Subject -->
               </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
     </div>
 
     <!-- begin::Action -->
