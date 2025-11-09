@@ -87,6 +87,12 @@
           }
         }
 
+        // &:has(.router-link-exact-active) {
+        //   &::after {
+        //     display: block;
+        //   }
+        // }
+
         &::after {
           content: '';
           width: 1rem;
@@ -125,6 +131,10 @@
             width: 134px;
             justify-content: flex-start;
             gap: 1rem;
+
+            &.router-link-exact-active {
+              color: $primary;
+            }
 
             .svg-box {
               width: 24px;
