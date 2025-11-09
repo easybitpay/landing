@@ -1,0 +1,18 @@
+.badge {
+  display: inline-block;
+  line-height: 16px;
+  word-break: break-all;
+  white-space: wrap;
+}
+
+@each $name, $value in $theme-text-colors {
+  .badge-#{$name} {
+    background-color: lighten($color: $value, $amount: 40);
+    color: darken($color: $value, $amount: 20);
+    svg {
+      path {
+        stroke: $value;
+      }
+    }
+  }
+}
