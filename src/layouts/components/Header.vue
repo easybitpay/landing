@@ -30,7 +30,7 @@ const envPanelURL = import.meta.env.VITE_APP_PANEL_URL
         <div class="d-flex align-items-center gap-14">
           <ul class="links">
             <li class="link">
-              <RouterLink to="/">How it works</RouterLink>
+              <RouterLink :to="{ name: 'document' }">How it works</RouterLink>
             </li>
 
             <li class="link">
