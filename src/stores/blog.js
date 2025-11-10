@@ -13,7 +13,7 @@ export const useBlogStore = defineStore('blog', () => {
    */
   async function getBlogList(params) {
     try {
-      const { data } = await api.get('blog/posts', {
+      const { data } = await api.get('v5/blog/posts', {
         params: params
       })
 

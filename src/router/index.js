@@ -41,6 +41,11 @@ const router = createRouter({
           path: 'blog/:slug',
           name: 'blog-detail',
           component: () => import('@/views/BlogDetail.vue')
+        },
+        {
+          path: 'download',
+          name: 'download',
+          component: () => import('@/views/Download.vue')
         }
       ]
     }

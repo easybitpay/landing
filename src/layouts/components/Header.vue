@@ -17,7 +17,7 @@ const pageName = computed(() => route.name)
 </script>
 
 <template>
-  <header id="header" :class="[{'gray' : pageName === 'privacy' || pageName === 'document'}]">
+  <header id="header" :class="[{'gray' : pageName === 'privacy' || pageName === 'document' || pageName === 'download'}]">
     <div class="container">
       <nav>
         <!-- begin::Logo -->
