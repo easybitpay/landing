@@ -22,20 +22,6 @@ import Withdraw from '@/components/help/Withdraw.vue'
 import DataModel from '@/components/help/DataModel.vue'
 import Security from '@/components/help/Security.vue'
 
-const JS = `const options = { 
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    Authorization: 'API_KEY'
-},`
-
-const PHP = `const options = { 
-  method: 'GET',
-  headers: {
-    'Content-Type': 'application/json',
-    Authorization: 'API_KEY'
-},`
-
 onMounted(() => {
   const scrollSpy = new ScrollSpy(document.body, {
     target: '#knowledge-nav'
@@ -49,7 +35,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container pt-20 d-flex gap-12">
+  <div class="container pt-14 d-flex gap-12">
     <div id="knowledge-holder">
       <div
         data-bs-spy="scroll"

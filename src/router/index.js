@@ -23,6 +23,11 @@ const router = createRouter({
           component: () => import('@/views/Security.vue')
         },
         {
+          path: 'privacy',
+          name: 'privacy',
+          component: () => import('@/views/Privacy.vue')
+        },
+        {
           path: 'document',
           name: 'document',
           component: () => import('@/views/Document.vue')

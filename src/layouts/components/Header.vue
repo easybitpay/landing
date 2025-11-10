@@ -1,8 +1,23 @@
 <script setup>
 const envPanelURL = import.meta.env.VITE_APP_PANEL_URL
+
+// Vue
+import { computed } from 'vue';
+
+// Vue Router
+import { useRoute } from 'vue-router';
+
+// ----- START -----
+
+// Generals
+const route = useRoute();
+
+// Computeds
+const pageName = computed(() => route.name)
 </script>
+
 <template>
-  <header id="header">
+  <header id="header" :class="[{'gray' : pageName === 'privacy' || pageName === 'document'}]">
     <div class="container">
       <nav>
         <!-- begin::Logo -->

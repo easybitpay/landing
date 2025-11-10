@@ -76,7 +76,9 @@ const { iconImage } = useIconImage()
           </p>
 
           <div class="action">
-            <button class="btn btn-primary w-120px p-0">Read more</button>
+            <RouterLink :to="{ name: 'security' }" class="btn btn-primary w-120px p-0"
+              >Read more</RouterLink
+            >
           </div>
         </div>
         <!-- end::Content -->

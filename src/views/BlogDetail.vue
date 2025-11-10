@@ -154,5 +154,5 @@ onMounted(() => {
     :gallery="blogInfo?.media?.gallery"
   />
 
-  <NextBlog class="mt-16"/>
+  <NextBlog class="mt-16" :loading="loading" :extras="blogInfo?.extras?.navigation || {}" />
 </template>
