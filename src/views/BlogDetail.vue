@@ -16,6 +16,7 @@ import useConvertDate from '@/composables/useConvertDate.js'
 
 // Compnenents
 import GallerySwiper from '@/components/globals/GallerySwiper.vue'
+import NextBlog from '@/components/blog/NextBlog.vue'
 
 // ----- START -----
 
@@ -152,4 +153,6 @@ onMounted(() => {
     v-if="blogInfo?.media?.gallery?.length"
     :gallery="blogInfo?.media?.gallery"
   />
+
+  <NextBlog class="mt-16"/>
 </template>

@@ -3,7 +3,7 @@
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
     font-size: 1.25rem !important;
-    color: white;
+    color: $primary;
 }
 
 .swiper-button-next,
@@ -24,6 +24,7 @@
 
     &.swiper-pagination-bullet-active {
         width: 1rem !important;
+        background: $primary;
     }
 }
 
