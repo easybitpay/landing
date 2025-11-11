@@ -6,7 +6,7 @@ const scrollToId = (id) => {
 
 <template>
   <div class="d-none d-lg-block">
-    <nav id="knowledge-nav" class="scroll-spy">
+    <nav id="document-nav" class="scroll-spy">
       <nav class="nav flex-column gap-2">
         <a class="nav-link" href="#overview" @click.prevent="scrollToId('overview')">Overview</a>
 

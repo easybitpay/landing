@@ -24,7 +24,7 @@ import Security from '@/components/help/Security.vue'
 
 onMounted(() => {
   const scrollSpy = new ScrollSpy(document.body, {
-    target: '#knowledge-nav'
+    target: '#document-nav'
   })
 
   scrollSpy.refresh()
@@ -36,10 +36,10 @@ onMounted(() => {
 
 <template>
   <div class="container pt-14 d-flex gap-12">
-    <div id="knowledge-holder">
+    <div id="document-holder">
       <div
         data-bs-spy="scroll"
-        data-bs-target="#knowledge-nav"
+        data-bs-target="#document-nav"
         data-bs-smooth-scroll="true"
         tabindex="0"
       >

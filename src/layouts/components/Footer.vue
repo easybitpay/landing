@@ -22,7 +22,7 @@ const links = [
         link: 'faq'
       },
       {
-        title: 'Privecy & terms',
+        title: 'Privecy & Policy',
         link: 'privacy'
       }
     ]
