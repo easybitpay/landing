@@ -40,16 +40,12 @@ onMounted(() => {
             information when you:
           </p>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               Use our website at <span class="text-dark fw-medium">https://easybitpay.com</span>
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Use our mobile applications (the “Wallet”)
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Use our merchant tools, payment gateway, and related services
-            </li>
+            <li>Use our mobile applications (the “Wallet”)</li>
+            <li>Use our merchant tools, payment gateway, and related services</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-6">
@@ -117,31 +113,29 @@ onMounted(() => {
         <section id="item_2" class="mb-10">
           <h2 class="pb-3 border-bottom mb-4 text-dark">2. What We Do? (non-custodial services)</h2>
 
-          <h4 class="text-dark mb-4">EasyBitPay provides:</h4>
+          <h6 class="text-dark mb-4">EasyBitPay provides:</h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               A <span class="text-dark fw-medium">non-custodial crypto wallet</span> for end users.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               A <span class="text-dark fw-medium">crypto payment gateway</span> for merchants.
             </li>
           </ul>
 
-          <h4 class="text-dark mb-4">Key points:</h4>
+          <h6 class="text-dark mb-4">Key points:</h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               We <span class="text-dark fw-medium">do not</span> store your private keys or seed
               phrases.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               We <span class="text-dark fw-medium">do not</span> hold your crypto funds or have
               direct control over your wallets.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Payments occur directly on blockchain networks between payer and merchant.
-            </li>
+            <li>Payments occur directly on blockchain networks between payer and merchant.</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-0">
@@ -155,19 +149,17 @@ onMounted(() => {
         <section id="item_3" class="mb-10">
           <h2 class="pb-3 border-bottom mb-4 text-dark">3. Information we do not collect</h2>
 
-          <h4 class="text-dark mb-4">We <span class="fw-bolder">do not</span>:</h4>
+          <h6 class="text-dark mb-4">We <span class="fw-bolder">do not</span>:</h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               Store or have access to your <span class="text-dark fw-medium">private keys</span>.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               Store or have access to your <span class="text-dark fw-medium">seed phrases</span> or
               recovery phrases.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Control or move your funds on your behalf.
-            </li>
+            <li>Control or move your funds on your behalf.</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-0">
@@ -196,15 +188,13 @@ onMounted(() => {
             If you use the Services as a merchant or business user, we may collect:
           </p>
 
-          <ul class="d-flex flex-column gap-2 mb-0">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Business name</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Contact person’s name (optional)</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Contact email address</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Website URL</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Receiving wallet addresses you provide for payments
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 mb-0 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Business name</li>
+            <li>Contact person’s name (optional)</li>
+            <li>Contact email address</li>
+            <li>Website URL</li>
+            <li>Receiving wallet addresses you provide for payments</li>
+            <li>
               Any other information you voluntarily provide to us (for example, when contacting
               support)
             </li>
@@ -218,21 +208,13 @@ onMounted(() => {
             To operate the payment gateway and provide accounting views, we may process:
           </p>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Wallet addresses you provide for receiving payments
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Transaction identifiers (TXIDs)</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Transaction amounts, tokens/currencies, and timestamps
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Invoice IDs, order IDs, internal merchant references
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Payment status (pending, confirmed, expired, failed)
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Wallet addresses you provide for receiving payments</li>
+            <li>Transaction identifiers (TXIDs)</li>
+            <li>Transaction amounts, tokens/currencies, and timestamps</li>
+            <li>Invoice IDs, order IDs, internal merchant references</li>
+            <li>Payment status (pending, confirmed, expired, failed)</li>
+            <li>
               Summaries of transaction histories for accounting, reporting, and dashboard purposes
             </li>
           </ul>
@@ -249,21 +231,13 @@ onMounted(() => {
             When you access our website or apps, we may automatically collect:
           </p>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              IP address and approximate location (based on IP)
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Browser type, device type, and operating system
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Date and time of access</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Pages or screens viewed, and features used
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Referring/exit pages</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              App version and basic diagnostic data
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>IP address and approximate location (based on IP)</li>
+            <li>Browser type, device type, and operating system</li>
+            <li>Date and time of access</li>
+            <li>Pages or screens viewed, and features used</li>
+            <li>Referring/exit pages</li>
+            <li>App version and basic diagnostic data</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-0">
@@ -281,10 +255,10 @@ onMounted(() => {
             Our website may use cookies and similar technologies to:
           </p>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Maintain user sessions</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Remember your preferences</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Analyze how the site is used</li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Maintain user sessions</li>
+            <li>Remember your preferences</li>
+            <li>Analyze how the site is used</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-0">
@@ -304,72 +278,48 @@ onMounted(() => {
         <section id="item_5-1" class="mb-10">
           <h4 class="text-dark mb-4">5.1 Service delivery</h4>
 
-          <ul class="d-flex flex-column gap-2 mb-0">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Providing, operating, and maintaining the Services
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Creating and managing merchant accounts
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Generating and tracking payment invoices
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Displaying transaction and accounting information to merchants
-            </li>
+          <ul class="d-flex flex-column gap-2 mb-0 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Providing, operating, and maintaining the Services</li>
+            <li>Creating and managing merchant accounts</li>
+            <li>Generating and tracking payment invoices</li>
+            <li>Displaying transaction and accounting information to merchants</li>
           </ul>
         </section>
 
         <section id="item_5-2" class="mb-10">
           <h4 class="text-dark mb-4">5.2 Communication and support</h4>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Responding to your inquiries and support requests
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Sending you important notices about security, changes, or incidents
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Responding to your inquiries and support requests</li>
+            <li>Sending you important notices about security, changes, or incidents</li>
           </ul>
         </section>
 
         <section id="item_5-3" class="mb-10">
           <h4 class="text-dark mb-4">5.3 Security and integrity</h4>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Monitoring for suspicious or abusive activity
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Detecting, preventing, and responding to fraud, abuse, or security incidents
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Monitoring for suspicious or abusive activity</li>
+            <li>Detecting, preventing, and responding to fraud, abuse, or security incidents</li>
           </ul>
         </section>
 
         <section id="item_5-4" class="mb-10">
           <h4 class="text-dark mb-4">5.4 Improvement and analytics</h4>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Understanding how the Services are used
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Fixing errors and improving performance and usability
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Understanding how the Services are used</li>
+            <li>Fixing errors and improving performance and usability</li>
           </ul>
         </section>
 
         <section id="item_5-5" class="mb-10">
           <h4 class="text-dark mb-4">5.5 Legal and compliance</h4>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Complying with applicable laws and regulations
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Enforcing our Terms & Conditions</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Responding to lawful requests from authorities where required
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Complying with applicable laws and regulations</li>
+            <li>Enforcing our Terms & Conditions</li>
+            <li>Responding to lawful requests from authorities where required</li>
           </ul>
         </section>
 
@@ -382,16 +332,16 @@ onMounted(() => {
             Where data protection laws such as the GDPR apply, we process personal data based on:
           </p>
 
-          <ul class="d-flex flex-column gap-2 mb-0">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 mb-0 fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Performance of a contract:</span> To provide the
               Services you request as a user or merchant.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Legitimate interests:</span> To secure, maintain,
               and improve the Services, prevent abuse, and communicate reasonable updates.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Legal obligations:</span> To comply with applicable
               laws, regulations, and legal processes.
             </li>
@@ -415,18 +365,12 @@ onMounted(() => {
           <p class="text-gray-800 dark-text-gray-400 mb-6">
             With trusted third-party service providers that help us operate the Services, such as:
           </p>
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Hosting providers</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Analytics tools (e.g., Google Analytics)
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Error monitoring and logging tools (e.g., Sentry)
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Pages or screens viewed, and features used
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Email and communication providers</li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Hosting providers</li>
+            <li>Analytics tools (e.g., Google Analytics)</li>
+            <li>Error monitoring and logging tools (e.g., Sentry)</li>
+            <li>Pages or screens viewed, and features used</li>
+            <li>Email and communication providers</li>
           </ul>
           <p class="text-gray-800 dark-text-gray-400 mb-0">
             These providers act under appropriate agreements and are expected to protect your
@@ -439,16 +383,10 @@ onMounted(() => {
           <p class="text-gray-800 dark-text-gray-400 mb-6">
             We may disclose information if we reasonably believe it is necessary to:
           </p>
-          <ul class="d-flex flex-column gap-2 mb-0">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Comply with a legal obligation, court order, or governmental request
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Protect the rights, property, or safety of EasyBitPay, our users, or others
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Detect, prevent, or address fraud, security, or technical issues
-            </li>
+          <ul class="d-flex flex-column gap-2 mb-0 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Comply with a legal obligation, court order, or governmental request</li>
+            <li>Protect the rights, property, or safety of EasyBitPay, our users, or others</li>
+            <li>Detect, prevent, or address fraud, security, or technical issues</li>
           </ul>
         </section>
 
@@ -483,36 +421,24 @@ onMounted(() => {
         <section id="item_9" class="mb-10">
           <h2 class="pb-3 border-bottom mb-4 text-dark">9. Data security</h2>
 
-          <p class="text-gray-800 dark-text-gray-400 mb-6">
+          <h6 class="text-dark mb-6">
             We use technical and organizational measures to protect your information, including:
-          </p>
+          </h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Encryption in transit (HTTPS/TLS) where appropriate
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Access control and least-privilege principles for internal systems
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Regular software updates and basic security practices
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Encryption in transit (HTTPS/TLS) where appropriate</li>
+            <li>Access control and least-privilege principles for internal systems</li>
+            <li>Regular software updates and basic security practices</li>
           </ul>
 
-          <p class="text-gray-800 dark-text-gray-400 mb-6">
+          <h6 class="text-dark mb-6">
             However, no system is completely secure. You are responsible for:
-          </p>
+          </h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Securing your devices and accounts
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Maintaining the confidentiality of your seed phrases and private keys
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Using secure backups and strong authentication methods where available
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Securing your devices and accounts</li>
+            <li>Maintaining the confidentiality of your seed phrases and private keys</li>
+            <li>Using secure backups and strong authentication methods where available</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-0">
@@ -531,21 +457,15 @@ onMounted(() => {
         <section id="item_10" class="mb-10">
           <h2 class="pb-3 border-bottom mb-4 text-dark">10. Data retention</h2>
 
-          <p class="text-gray-800 dark-text-gray-400 mb-6">
+          <h6 class="text-dark mb-6">
             We retain information for as long as reasonably necessary to:
-          </p>
+          </h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">Provide and maintain the Services</li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Maintain accurate business and transaction records
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Comply with legal and regulatory obligations
-            </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
-              Resolve disputes and enforce our agreements
-            </li>
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>Provide and maintain the Services</li>
+            <li>Maintain accurate business and transaction records</li>
+            <li>Comply with legal and regulatory obligations</li>
+            <li>Resolve disputes and enforce our agreements</li>
           </ul>
 
           <p class="text-gray-800 dark-text-gray-400 mb-6">
@@ -562,33 +482,33 @@ onMounted(() => {
         <section id="item_11" class="mb-10">
           <h2 class="pb-3 border-bottom mb-4 text-dark">11. Your rights</h2>
 
-          <p class="text-gray-800 dark-text-gray-400 mb-6">
+          <h6 class="text-dark mb-6">
             Depending on your jurisdiction, you may have the following rights regarding your
             personal data:
-          </p>
+          </h6>
 
-          <ul class="d-flex flex-column gap-2">
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+          <ul class="d-flex flex-column gap-2 fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Access:</span> Request a copy of the personal data
               we hold about you.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Rectification:</span> Request correction of
               inaccurate or incomplete data.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Erasure:</span> Request deletion of your personal
               data, subject to our legal obligations and technical limitations.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Restriction:</span> Request restriction of
               processing in certain circumstances.
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Objection:</span> Object to certain types of
               processing (such as direct marketing).
             </li>
-            <li class="fs-7 text-gray-800 dark-text-gray-400">
+            <li>
               <span class="text-dark fw-medium">Portability:</span> Request your data in a
               structured, commonly used, machine-readable format, where applicable.
             </li>
