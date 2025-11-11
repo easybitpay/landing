@@ -32,7 +32,7 @@ onMounted(() => {
         tabindex="0"
       >
         <section id="overview">
-          <PageHeader title="Privacy & Terms" description="We keep your funds & payments safe" />
+          <PageHeader title="Privacy & Policy" description="Last updated: 10 November 2025" />
 
           <p class="text-gray-800 dark-text-gray-400 mb-6">
             This Privacy Policy explains how
